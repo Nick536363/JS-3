@@ -1,0 +1,11 @@
+let firstname = ["Ayan", "Daniar", "Nursultan", "Medet", "Aidos","Alisher", "Bekzat", "Janbolat", "Erzhan", "Sanzhar","Gulnar", "Altynai", "Aizhan", "Nuray", "Raisa","Tamara", "Aygul", "Moldir", "Adina", "Akboken","Bota", "Dinara", "Janar", "Sholpan", "Gulsara","Makpal", "Farida", "Lyazzat", "Erke", "Zhibek","Merewert", "Nazgul"];
+let lastname = ["Adeyemi", "Banda", "Chukwu", "Diallo", "Emeka","Fofana", "Koffi", "Mbabazi", "Okafor", "Tshabalala","Zuma", "Kamara"];
+let surname = ["Agarwal", "Bhat", "Choudhury", "Das", "Gupta","Iyer", "Jadhav", "Kumar", "Mishra", "Naidu","Patel", "Reddy", "Sharma", "Singh", "Srinivasan","Subramanian", "Thakur", "Verma", "Yadav", "Vishwakarma","Kashyap", "Khandelwal"];
+let form = document.getElementById("form");
+let day = document.querySelector("#day");
+let month = document.querySelector("#month");
+let year = document.querySelector("#year");
+let div = document.querySelector("#result");
+day.addEventListener("change",function day(){div.innerHTML +=firstname[form.day.value-1]+" "});
+month.addEventListener("change",function month(){div.innerHTML+=lastname[form.month.value-1]+" "});
+year.addEventListener("change",function year(){div.innerHTML+=surname[form.year.value-1]+" "});
